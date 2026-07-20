@@ -5,6 +5,7 @@ import {
   Calendar, ArrowRight, Star, ChevronLeft
 } from 'lucide-react';
 import { FaYoutube, FaFacebook, FaInstagram } from "react-icons/fa";
+import preachingImage from "./assets/preaching.jpg";
 
 /* ================================================================
    DELIVERANCE CHURCH INTERNATIONAL – ISIOLO
@@ -466,11 +467,11 @@ const MeetOurPastor = () => {
           <FadeIn>
             <div className="relative">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gray-100">
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" 
-                  alt="Rev. Geoffrey Murungi" 
-                  className="w-full h-full object-cover"
-                />
+                <img
+                   src={preachingImage}
+                   alt="Rev. Geoffrey Murungi"
+                   className="w-full h-full object-cover"
+/>
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-900 rounded-2xl flex items-center justify-center shadow-lg">
                 <div className="text-center text-white">
