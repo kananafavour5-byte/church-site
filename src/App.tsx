@@ -6,6 +6,12 @@ import {
 } from 'lucide-react';
 import { FaYoutube, FaFacebook, FaInstagram } from "react-icons/fa";
 import preachingImage from "./assets/preaching.jpg";
+import kidsImage from "./assets/kids.jpg";
+import youthImage from "./assets/youth.jpg";
+import congregationImage from "./assets/congregation.jpg";
+import pastorWifeImage from "./assets/pastor-wife.jpg";
+import heroImage from "./assets/hero.jpg";
+
 
 /* ================================================================
    DELIVERANCE CHURCH INTERNATIONAL – ISIOLO
@@ -147,7 +153,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('#home'); }} className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-blue-900 flex items-center justify-center">
-                <span className="text-white font-bold text-lg">D</span>
+                <span className="text-white font-bold text-lg"><img src={heroImage} alt="Deliverance Church" /></span>
               </div>
               <div className={`hidden sm:block ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
                 <div className="font-bold text-sm leading-tight tracking-wide">DELIVERANCE CHURCH</div>
@@ -226,11 +232,11 @@ const Hero = () => {
   const [touchStart, setTouchStart] = useState(0);
   const slides = [
     {
-      image: 'https://images.unsplash.com/photo-1548625149-fc4a29cf7092?w=1920&q=80',
+      image: congregationImage,
       alt: 'Pastor and First Lady',
     },
     {
-      image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1920&q=80',
+      image: pastorWifeImage,
       alt: 'Congregation worship',
     },
   ];
@@ -540,7 +546,7 @@ const Ministries = () => {
       name: 'Kingdom Kids',
       description: "A fun, safe, and nurturing environment where children discover God's love through Bible stories, songs, and interactive activities.",
       icon: <Baby size={32} />,
-      image: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&q=80',
+        image: kidsImage,
       color: 'from-amber-500/80 to-orange-600/80',
       cta: 'Learn More',
       features: ['Bible Hero of the Week', 'Memory Verses', 'Kids Gallery'],
@@ -549,7 +555,7 @@ const Ministries = () => {
       name: 'Youth Ministry',
       description: 'An energetic community empowering young people to live boldly for Christ through discipleship, mentorship, and dynamic fellowship.',
       icon: <Users size={32} />,
-      image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80',
+      image: youthImage,
       color: 'from-blue-500/80 to-indigo-600/80',
       cta: 'Get Involved',
       features: ['Youth Fellowship', 'Leadership Training', 'Music & Arts'],
