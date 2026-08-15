@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
-  Menu, X, Clock, MapPin, Phone, Mail, ChevronRight, Play,
+  Menu, X, Clock, MapPin, Phone, Mail, Play,
   Heart, Users, BookOpen, Music, Globe, Baby, Send, MessageCircle,
-  Calendar, ArrowRight, Star, ChevronLeft
+  Calendar, ArrowRight, Star
 } from 'lucide-react';
 import { FaYoutube, FaFacebook, FaInstagram } from "react-icons/fa";
 import preachingImage from "./assets/preaching.jpg";
